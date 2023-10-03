@@ -1,0 +1,25 @@
+{
+  "name": "docker-pt",
+  "version": "1.0.0",
+  "description": "Prueba tecnica de socker y docker-compose",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josu88/docker-pt.git"
+  },
+  "author": "Josué",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josu88/docker-pt/issues"
+  },
+  "homepage": "https://github.com/josu88/docker-pt#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}

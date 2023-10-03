@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: ./
+    ports:
+      - "5050:5050"
+    networks:
+      - my_network
+  curl:
+    build:
+      context: ./
+    ports:
+      - "5060:5060"
+    depends_on:
+      - web
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
