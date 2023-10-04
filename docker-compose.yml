@@ -4,16 +4,19 @@ services:
     build:
       context: ./
     ports:
-      - "5050:5050"
+      - "5050:5000"
     networks:
       - my_network
   curl:
-    build:
-      context: ./
-    ports:
-      - "5060:5060"
     depends_on:
       - web
+    image: curlimages/curl
+    command:
+      [
+        "sh",
+        "-c",
+        "until curl -s http://web:5000/health; do echo 'Waiting for web service...'; sleep 2; done",
+      ]
     networks:
       - my_network
 
