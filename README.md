@@ -23,3 +23,8 @@
 4 - Vemos la respuesta del backend a esa peticion, debería ser {"status": "200", "mensage":"ok"}
 
 ### Ejecucion del proyecto con docker-compose
+
+1 - Ejecutamos el comando siguiente en el powershell o en la terminal del visual studio code
+docker-compose up
+
+2 - En la terminal o poweshell vemos como el servicio curl no saca la respuesta del endpoint http://localhost:5000/health y a la vez nos habre el navegador que si ponemos la ruta anterior nos dará el mismo resultado que el curl

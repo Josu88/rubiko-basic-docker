@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 // Importamos las variables de entorno que hemos creado para la conexión
-const { PORT, HOST } = process.env;
+const { PORT, HOST, GREETINGS } = process.env;
 
 /*   ### Endpoints ###  */
 /*   ### Pagina de Inicio ###  */
@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
   res.send({
     status: "200",
-    message: "OK",
+    message: GREETINGS,
   });
 });
 
