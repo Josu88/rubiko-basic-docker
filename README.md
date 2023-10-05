@@ -36,4 +36,4 @@ docker-compose up
     a - docker run -p 5050:5000 rubiko-basic-docker
     b - docker run -p 5050:5000 -e GREETINGS="Hello Rubiko Tech!" rubiko-basic-docker(este comando es indicandole la variable de entorno GREETINGS)
 
-#### En el caso de que no fucionen los comandos mirard el nombre de la imagen en el docker haber si se llama rubiko-basic-docker sino cmabiarla en el comando que useis
+#### En el caso de que no fucionen los comandos mirad el nombre de la imagen en el docker haber si se llama rubiko-basic-docker sino cmabiarla en el comando que useis
