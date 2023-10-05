@@ -27,4 +27,13 @@
 1 - Ejecutamos el comando siguiente en el powershell o en la terminal del visual studio code
 docker-compose up
 
-2 - En la terminal o poweshell vemos como el servicio curl no saca la respuesta del endpoint http://localhost:5000/health y a la vez nos habre el navegador que si ponemos la ruta anterior nos dará el mismo resultado que el curl
+2 - En la terminal o powershell vemos como el servicio curl no saca la respuesta del endpoint http://localhost:5000/health y a la vez nos habre el navegador que si ponemos la ruta anterior nos dará el mismo resultado que el curl
+
+### Ejecución de la imagen una vez instalada en el docker local
+
+1 - Ponermos en el powershell o terminal del visual studio code los siguientes comandos:
+
+    a - docker run -p 5050:5000 rubiko-basic-docker
+    b - docker run -p 5050:5000 -e GREETINGS="Hello Rubiko Tech!" rubiko-basic-docker(este comando es indicandole la variable de entorno GREETINGS)
+
+#### En el caso de que no fucionen los comandos mirard el nombre de la imagen en el docker haber si se llama rubiko-basic-docker sino cmabiarla en el comando que useis
