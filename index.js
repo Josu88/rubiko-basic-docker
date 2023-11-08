@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 // Importamos las variables de entorno que hemos creado para la conexión
-const { PORT, PORT_EP, HOST, GREETINGS } = process.env;
+const { PORT, HOST, GREETINGS } = process.env;
 
 /*   ### Endpoints ###  */
 
@@ -55,5 +55,5 @@ app.use((req, res) => {
 
 // Ponemos el servidor a la escucha
 app.listen(PORT, () => {
-  console.log(`Server listening at http://${HOST}:${PORT_EP}/health`);
+  console.log(`Server listening at http://${HOST}:${PORT}/health`);
 });
